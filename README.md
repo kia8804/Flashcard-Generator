@@ -1,4 +1,4 @@
-# Flashcard Generator
+# Flashcard Generator (New Features In Progress)
 
 The Flashcard Generator is a project that utilizes the BART model to automatically generate flashcards from a given text. It provides an API endpoint to generate flashcards based on user input. The project leverages natural language processing techniques and deep learning models to extract relevant information and generate high-quality flashcards.
 
@@ -101,7 +101,10 @@ for flashcard in flashcards:
 ```
 
 ## In Progress
-I am actively working on implementing parallel computing techniques to enhance the performance of the flashcard generation process. By leveraging parallelization, my aim is to improve the efficiency and reduce the processing time, allowing for faster generation of flashcards from larger texts.
+I am actively working on implementing parallel computing techniques to enhance the performance of the flashcard generation process. By leveraging parallelization, my aim is to improve the efficiency and reduce the processing time, allowing for faster generation of flashcards from larger texts. 
+
+In addition to implementing parallel computing, I am planning to incorporate user feedback functionality into the project. This feature will allow users to receive real-time feedback on their performance and progress, enabling them to assess their learning and track their improvement over time.
+
 
 
 ## License
