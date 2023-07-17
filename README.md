@@ -73,7 +73,8 @@ The API will respond with a JSON object containing the generated flashcards:
       "question": "Question 2",
       "answer": "Answer 2"
     },
-    ...
+      "question": "...",
+      "answer": "..." 
   ]
 }
 ```
