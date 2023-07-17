@@ -1,4 +1,4 @@
-# Flashcard Generator (New Features In Progress)
+# Flashcard Generator
 
 The Flashcard Generator is a project that utilizes the BART model to automatically generate flashcards from a given text. It provides an API endpoint to generate flashcards based on user input. The project leverages natural language processing techniques and deep learning models to extract relevant information and generate high-quality flashcards.
 
