@@ -20,7 +20,7 @@ The Flashcard Generator is a project that utilizes the BART model to automatical
 ## Installation
 
 1. Clone the repository:
-```
+```bash
 git clone https://github.com/your-username/flashcard-generator.git
 ```
 
@@ -99,6 +99,10 @@ for flashcard in flashcards:
     print("Answer:", flashcard["answer"])
     print()
 ```
+
+## In Progress
+I am actively working on implementing parallel computing techniques to enhance the performance of the flashcard generation process. By leveraging parallelization, my aim is to improve the efficiency and reduce the processing time, allowing for faster generation of flashcards from larger texts.
+
 
 ## License
 This project is licensed under the MIT License.
