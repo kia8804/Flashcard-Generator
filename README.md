@@ -24,7 +24,7 @@ The Flashcard Generator is a project that utilizes the BART model to automatical
 git clone https://github.com/your-username/flashcard-generator.git
 ```
 
-3. Install the required dependencies:
+2. Install the required dependencies:
 ```python
 pip install nltk transformers torch sentence-transformers
 ```
