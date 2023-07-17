@@ -55,8 +55,8 @@ http://localhost:5000/generate_flashcards
 Request Body:
 ```json
 {
-  "text": "Enter your text here...",
-  "num_flashcards": 5
+  "num_flashcards": 5,
+  "text": "Enter your text here..."
 }
 ```
 
