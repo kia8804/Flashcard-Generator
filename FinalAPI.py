@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-import model
+import main
 
 app = Flask(__name__)
 
@@ -10,7 +10,7 @@ def generate_flashcards():
     num_flashcards = request.json['num_flashcards']
 
     # Call your machine learning model to generate the flashcards
-    flashcards = model.generate_flashcards(text, num_flashcards)
+    flashcards = main.generate_flashcards(text, num_flashcards)
 
     # Return the flashcards as a JSON response
     response = {
