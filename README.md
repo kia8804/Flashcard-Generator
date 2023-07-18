@@ -21,7 +21,7 @@ The Flashcard Generator is a project that utilizes the BART model to automatical
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/BART-Flashcard-Generator.git
+git clone https://github.com/your-username/Flashcard-Generator.git
 ```
 
 2. Install the required dependencies:
