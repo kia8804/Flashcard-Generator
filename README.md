@@ -21,7 +21,7 @@ The Flashcard Generator is a project that utilizes the BART model to automatical
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/flashcard-generator.git
+git clone https://github.com/your-username/Flashcard-Generator.git
 ```
 
 2. Install the required dependencies:
@@ -29,24 +29,12 @@ git clone https://github.com/your-username/flashcard-generator.git
 pip install nltk transformers torch sentence-transformers
 ```
 
-3. Download the NLTK resources:
-```python
-import nltk
-nltk.download('punkt')
-nltk.download('wordnet')
-nltk.download('stopwords')
-```
-
-4. Obtain the BART model and Sentence-BERT model:
-```python
-from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
-from sentence_transformers import SentenceTransformer
-
-tokenizer = AutoTokenizer.from_pretrained("voidful/bart-eqg-question-generator")
-model = AutoModelForSeq2SeqLM.from_pretrained("voidful/bart-eqg-question-generator")
-sentence_bert_model = SentenceTransformer('average_word_embeddings_glove.6B.300d')
-```
 ## API Usage
+Run the API file:
+```python
+python FinalAPI.py
+```
+
 The Flashcard Generator provides a RESTful API endpoint to generate flashcards. Send a POST request to the following URL:
 ```bash
 http://localhost:5000/generate_flashcards
@@ -81,24 +69,6 @@ The API will respond with a JSON object containing the generated flashcards:
 }
 ```
 
-## Example Usage
-```python
-import requests
-
-url = "http://localhost:5000/generate_flashcards"
-data = {
-  "text": "Enter your text here...",
-  "num_flashcards": 5
-}
-
-response = requests.post(url, json=data)
-flashcards = response.json()["flashcards"]
-
-for flashcard in flashcards:
-    print("Question:", flashcard["question"])
-    print("Answer:", flashcard["answer"])
-    print()
-```
 
 ## In Progress
 I am actively working on implementing parallel computing techniques to enhance the performance of the flashcard generation process. By leveraging parallelization, my aim is to improve the efficiency and reduce the processing time, allowing for faster generation of flashcards from larger texts. 
