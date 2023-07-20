@@ -7,7 +7,7 @@ app = Flask(__name__)
 def generate_flashcards():
     # Get the text input and number of flashcards from the request
     text = request.json['text']
-    num_flashcards = request.json['num_flashcards']
+    num_flashcards = request.json['num_flashcards_limit']
 
     # Call your machine learning model to generate the flashcards
     flashcards = main.generate_flashcards(text, num_flashcards)
