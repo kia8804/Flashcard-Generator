@@ -47,7 +47,7 @@ def generate_flashcards(text, num_flashcards):
         input_ids = inputs["input_ids"].tolist()[0]
 
         text_tokens = tokenizer.convert_ids_to_tokens(input_ids)
-        # print(text_tokens)
+        
         outputs = model(**inputs)
         answer_start_scores=outputs.start_logits
         answer_end_scores=outputs.end_logits
