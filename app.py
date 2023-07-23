@@ -18,5 +18,5 @@ def generate_flashcards():
     }
     return jsonify(response)
 
-if __name__ == '__main__':
-    app.run()
+# if __name__ == '__main__':
+#     app.run()
