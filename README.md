@@ -15,9 +15,9 @@ The core functionality of the Flashcard/Question Answering system is implemented
 5. Utilize the BART-based model to find accurate answers to the selected questions within the input text.
 6. Create a set of flashcards, each containing a generated question and its corresponding answer.
 
-### API (api.py)
+### API (app.py)
 
-The API is created using the Flask web framework and resides in the `api.py` file. It sets up an HTTP server that exposes a single endpoint:
+The API is created using the Flask web framework and resides in the `app.py` file. It sets up an HTTP server that exposes a single endpoint:
 
 - `/generate_flashcards`: Accepts POST requests with a JSON payload containing the `text` and `num_flashcards_limit` parameters. The `text` parameter should contain the text from which flashcards need to be generated, and `num_flashcards_limit` specifies the maximum number of flashcards to create.
 
